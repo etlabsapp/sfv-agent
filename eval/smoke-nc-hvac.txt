@@ -1,0 +1,14 @@
+
+- **Goodwill Southern Piedmont free HVAC training with Construction Basics prerequisite**: Free instruction with no cost, suitable for veterans living in Goodwill Southern Piedmont's local service area. (check the official link)
+- **HVAC School free HVAC/R mini-courses**: Free instruction with no cost, available online. (check the official link)
+- **SkillBridge welding, HVACR & fire sprinkler training**: Free instruction with no cost, available for active duty members within 180 days of service. (check the official link)
+
+Sources:
+- Goodwill Southern Piedmont free HVAC training with Construction Basics prerequisite (In-person; Goodwill Construction Skills Training Center, Charlotte, North Carolina; local service area only): https://goodwillsp.org/course/hvac/ (details: https://skillsforvets.org/programs/goodwill-southern-piedmont-free-hvac-training-with-construction-basics-prerequisite/)
+- HVAC School free HVAC/R mini-courses (Online; Online): https://www.hvacrschool.com/courses/ (details: https://skillsforvets.org/programs/hvac-school-free-hvac-r-mini-courses/)
+- SkillBridge welding, HVACR & fire sprinkler training (format: see official page): https://www.uavip.org/faq (details: https://skillsforvets.org/programs/ua-veterans-in-piping-vip-welding-hvacr-and-fire-sprinkler-skillbridge/)
+
+[tools: [{'tool': 'search_programs', 'args': {'query': 'HVAC', 'state': 'NC', 'free_only': True}}]]
+[guardrails: []]
+
+(15.5s)

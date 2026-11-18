@@ -1,0 +1,106 @@
+[
+ {
+  "q": "Free CDL truck driving school in Iowa?",
+  "type": "programs",
+  "expect_any": [
+   "dmacc-class-a-cdl-fmcsa-veteran-grant",
+   "eicc-class-a-cdl-fmcsa-cmvost-grant",
+   "hawkeye-class-a-cdl-trucking-with-the-troops-grant",
+   "indian-hills-class-a-cdl-driving-futures-grant"
+  ]
+ },
+ {
+  "q": "How do I get a job as a data center technician?",
+  "type": "programs",
+  "expect_any": [
+   "microsoft-military-datacenter-pathway-mdp-skillbridge",
+   "microsoft-military-datacenter-pathway-vets",
+   "microsoft-datacenter-academy-at-atlanta-technical-and-west-georgia-tec",
+   "salute-mission-critical-skillbridge",
+   "equinix-skillbridge-data-center-trainee-programs",
+   "virginia-fastforward-and-g3-data-center-infrastructure-training",
+   "laurel-ridge-data-center-technician-credential",
+   "iron-mountain-critical-facilities-technician-skillbridge",
+   "aws-information-infrastructure-pre-apprenticeship"
+  ]
+ },
+ {
+  "q": "I want to learn AI and machine learning online.",
+  "type": "programs",
+  "expect_any": [
+   "microsoft-learn-training-and-credentials",
+   "ai-fluency-for-creative-work-anthropic",
+   "ai-fluency-framework-and-foundations-anthropic",
+   "analytics-vidhya-free-ai-and-data-science-courses-free-completion",
+   "canva-ai-certification-canva-design-school",
+   "claude-101-anthropic-academy-free-course-with-certificate",
+   "deeplearning-ai-short-courses",
+   "elements-of-ai-free-online-course",
+   "fast-ai-practical-deep-learning-for-coders",
+   "genai-101-kelley-school-of-business-indiana-university",
+   "global-mooc-on-the-ethics-of-ai-unesco-coursera",
+   "google-machine-learning-crash-course",
+   "hp-life-ai-for-beginners",
+   "hugging-face-learn-llm-agents-deep-rl-courses",
+   "ibm-skillsbuild-for-veterans",
+   "meta-blueprint-free-ai-courses-for-marketing-generative-ai-for",
+   "nvidia-deep-learning-institute-free-self-paced-courses",
+   "openai-academy-free-ai-courses-badges-and-live-events",
+   "ibm-skillsbuild-via-va-independent-elearning-1-000-plus-courses",
+   "melt-vet-machine-learning-training-for-veterans",
+   "oxford-unesco-course-on-ai-and-digital-transformation-in-the-public",
+   "asana-ai-for-work-skill-badge",
+   "mit-opencourseware-6-036-6-s191-intro-to-deep-learning",
+   "nvidia-dli-open-source-courses-free-no-registration",
+   "microsoft-applied-skills-streamline-business-workflows-with-ai-chat",
+   "ibm-skillsbuild-via-va-smartcare-ai-transforming-healthcare-journeys-gle",
+   "ibm-skillsbuild-via-va-da-for-sustainability-gle",
+   "ibm-skillsbuild-via-va-enterprise-data-science-in-practice-gle",
+   "ibm-skillsbuild-via-va-ai-for-sustainability-gle",
+   "claude-corps-fellowship-anthropic-paid-12-month-ai-fellowship-at",
+   "veteranet-free-ai-and-cloud-training"
+  ]
+ },
+ {
+  "q": "I'm Air Force. Can I get my certs paid for?",
+  "type": "programs",
+  "expect_any": [
+   "air-force-cool-credentialing"
+  ]
+ },
+ {
+  "q": "Is there carpentry training for veterans?",
+  "type": "programs",
+  "expect_any": [
+   "ubc-military-veterans-program-free-carpenter-and-millwright-training"
+  ]
+ },
+ {
+  "q": "I want to be a Salesforce administrator.",
+  "type": "programs",
+  "expect_any": [
+   "salesforce-vetforce-trailhead-military"
+  ]
+ },
+ {
+  "q": "I want to be an auto mechanic.",
+  "type": "programs",
+  "expect_any": [
+   "bmw-military-service-technician-education-program-mstep",
+   "gm-shifting-gears-automotive-technician-training-program"
+  ]
+ },
+ {
+  "q": "Tell me about the Amazon Warrior Coders Academy.",
+  "type": "not_found",
+  "note": "made-up program"
+ },
+ {
+  "q": "Can you help me with my divorce paperwork?",
+  "type": "handoff"
+ },
+ {
+  "q": "What are the side effects of my sleep medication?",
+  "type": "handoff"
+ }
+]

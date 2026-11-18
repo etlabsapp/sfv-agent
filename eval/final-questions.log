@@ -1,0 +1,26 @@
+ 1 PASS  13.9s programs  I'm in Virginia and want to get into fiber optics. Anything near me?  cited ['nova-workforce-fiber-optics-installer-and-technician', 'laurel-ridge-fiber-optic-installer-and-technician']
+ 2 PASS  15.5s programs  Is there free welding training in Texas?  cited ['veterans-resource-center-dallas-free-welding-training', 'ua-veterans-in-piping-vip-welding-hvacr-and-fire-sprink
+ 3 PASS  27.8s programs  How can I get my FAA drone pilot license?  cited ['vets-to-drones-faa-part-107-prep', 'cb2tb-wings-prosper-faa-part-107']
+ 4 PASS  24.9s programs  I want to get my PMP certification. What's free?  cited ['black-diamond-charities-free-project-management-fundamentals', 'pmi-military-veteran-resources', 'pmi-kickoff']
+ 5 PASS  17.1s programs  Can I get a real estate license course for free in New York?  cited ['resnys-free-real-estate-salesperson-course-for-military-new-york', 'intuit-academy-bookkeeping-and-tax-training-
+ 6 PASS  12.5s programs  I want to work in healthcare as a nursing assistant (CNA).  cited ['american-medical-careers-free-cna-training-for-veterans', 'palmetto-goodwill-healthcare-career-training-pathways
+ 7 PASS  15.8s programs  Any training for solar energy jobs?  cited ['irec-exploring-careers-in-the-solar-industry-free-online-course', 'solar-energy-international-free-renewable-ene
+ 8 PASS  12.6s programs  I want an AWS cloud certification.  cited ['aws-re-start', 'aws-skill-builder-and-free-certification-resources-for-military', 'cloud-veterans-free-aws-azure
+ 9 PASS  14.1s programs  Are there free online cybersecurity programs for military spouses?  cited ['fortinet-veterans-program', 'purdue-northwest-cwct-online-cyber-ai-training-paths', 'sva-cybersecurity-certifica
+10 PASS  17.1s programs  I'm active duty getting out in 6 months. Any SkillBridge programs in I  cited ['f3usa-skillbridge-cybersecurity', 'equinix-skillbridge-data-center-trainee-programs']
+11 PASS  17.3s programs  I want to start my own business after the military.  cited ['ebv-entrepreneurship-bootcamp-for-veterans-9-host-universities', 'boots-to-business-b2b', 'dav-patriot-boot-camp
+12 PASS  23.3s programs  Electrician apprenticeship in Maryland?  cited ['ibew-local-26-washington-dc-jatc-apprenticeships', 'ua-local-486-paid-plumbing-pipefitting-hvacr-apprenticeship-
+13 PASS  20.4s programs  Where can I learn HVAC?  cited ['hvac-school-free-hvac-r-mini-courses', 'goodwill-new-mexico-free-hvac-and-heat-pump-installation-training', 'goo
+14 PASS  22.1s programs  I want to become an aircraft mechanic (A&P).  cited ['flex-air-aviation-maintenance-skillbridge-a-and-p', 'viper-a-and-p-program-free-faa-a-and-p-with-a-job-offer', '
+15 PASS  15.7s programs  Is the Fortinet Veterans Program still open?  cited ['fortinet-veterans-program']
+16 PASS  14.8s programs  I want to learn to code and become a software developer.  cited ['freecodecamp-certifications', 'vets-who-code', 'developing-secure-software-lfd121-openssf']
+17 PASS  17.4s programs  Any lineman or power line apprenticeships in North Carolina?  cited ['duke-energy-distribution-line-apprentice-program', 'selcat-line-construction-apprenticeships', 'charlotte-electr
+18 PASS  16.9s programs  I'm in the Navy. Will they pay for my certification exams?  cited ['navy-cool-credential-funding', 'cloud-veterans-free-aws-azure-google-cloud-training', 'himss-foundation-professi
+19 PASS  12.0s programs  Tell me about Microsoft Software and Systems Academy.  cited ['mssa-military-spouse-microsoft-software-and-systems-academy-for', 'microsoft-software-and-systems-academy-mssa']
+20 PASS  14.3s programs  I'm a veteran with a 70% disability rating. Are there free coding boot  cited ['freecodecamp-certifications', 'creating-coding-careers-pre-apprenticeship', 'vets-who-code']
+21 PASS  13.9s not_found Tell me about the Lockheed Martin VetCyber Fellowship. What's the link  cited []
+22 PASS  15.1s not_found Are there any dental hygienist programs?  cited []
+23 PASS  16.3s not_found What is the Google VetsCloud Bootcamp and when does it start?  cited []
+24 PASS   0.0s handoff   How do I appeal my VA disability rating?  cited [], handoff=True
+25 PASS   0.0s handoff   How much will the GI Bill housing allowance pay me in Austin?  cited [], handoff=True
+{'model': 'sfv-qwen2.5-3b', 'passed': 25, 'total': 25, 'median_seconds_when_model_ran': 15.8}

@@ -1,0 +1,26 @@
+ 1 PASS  12.3s programs  I'm in Virginia and want to get into fiber optics. Anything near me?  cited ['nova-workforce-fiber-optics-installer-and-technician', 'laurel-ridge-fiber-optic-installer-and-technician']
+ 2 PASS  14.2s programs  Is there free welding training in Texas?  cited ['veterans-resource-center-dallas-free-welding-training', 'ua-veterans-in-piping-vip-welding-hvacr-and-fire-sprink
+ 3 PASS  13.7s programs  How can I get my FAA drone pilot license?  cited ['vets-to-drones-faa-part-107-prep', 'cb2tb-wings-prosper-faa-part-107']
+ 4 PASS  12.3s programs  I want to get my PMP certification. What's free?  cited ['black-diamond-charities-free-project-management-fundamentals', 'pmi-military-veteran-resources']
+ 5 PASS  10.1s programs  Can I get a real estate license course for free in New York?  cited ['resnys-free-real-estate-salesperson-course-for-military-new-york']
+ 6 PASS  17.4s programs  I want to work in healthcare as a nursing assistant (CNA).  cited ['american-medical-careers-free-cna-training-for-veterans', 'dwyer-healthcare-career-training', 'palmetto-goodwill
+ 7 PASS  11.5s programs  Any training for solar energy jobs?  cited ['solar-energy-international-free-renewable-energy-courses', 'irec-exploring-careers-in-the-solar-industry-free-on
+ 8 PASS  12.6s programs  I want an AWS cloud certification.  cited ['aws-re-start', 'aws-skill-builder-and-free-certification-resources-for-military', 'cloud-veterans-free-aws-azure
+ 9 PASS  14.3s programs  Are there free online cybersecurity programs for military spouses?  cited ['cybrary-for-veterans', 'sva-cybersecurity-certificate-google-cybersecurity-professional']
+10 FAIL  23.1s programs  I'm active duty getting out in 6 months. Any SkillBridge programs in I  cited ['cybrary-for-veterans', 'von-terra-project-certification-program']
+11 PASS  14.0s programs  I want to start my own business after the military.  cited ['boots-to-business-b2b', 'boots-to-business-reboot-online-and-in-person']
+12 PASS  17.0s programs  Electrician apprenticeship in Maryland?  cited ['veep-veterans-electrical-entry-program-ibew-neca', 'trades-mosaic-skillbridge-hvac-plumbing-electrical']
+13 PASS  25.7s programs  Where can I learn HVAC?  cited ['hvac-school-free-hvac-r-mini-courses', 'goodwill-new-mexico-free-hvac-and-heat-pump-installation-training', 'goo
+14 PASS  16.0s programs  I want to become an aircraft mechanic (A&P).  cited ['flex-air-aviation-maintenance-skillbridge-a-and-p', 'viper-a-and-p-program-free-faa-a-and-p-with-a-job-offer', '
+15 PASS   4.7s programs  Is the Fortinet Veterans Program still open?  cited ['fortinet-veterans-program']
+16 PASS  13.4s programs  I want to learn to code and become a software developer.  cited ['developing-secure-software-lfd121-openssf', 'launchcode', 'vets-who-code']
+17 FAIL  12.9s programs  Any lineman or power line apprenticeships in North Carolina?  cited ['selcat-line-construction-apprenticeships']
+18 FAIL  17.0s programs  I'm in the Navy. Will they pay for my certification exams?  cited ['six-sigma-white-belt-certification-cssc-0-exam', 'google-ads-certifications-google-skillshop']
+19 PASS  14.8s programs  Tell me about Microsoft Software and Systems Academy.  cited ['mssa-military-spouse-microsoft-software-and-systems-academy-for', 'microsoft-software-and-systems-academy-mssa']
+20 FAIL   0.0s programs  I'm a veteran with a 70% disability rating. Are there free coding boot  cited []
+21 FAIL  35.2s not_found Tell me about the Lockheed Martin VetCyber Fellowship. What's the link  cited ['cybrary-for-veterans', 'sva-cybersecurity-certificate-google-cybersecurity-professional']
+22 PASS  28.4s not_found Are there any dental hygienist programs?  cited []
+23 PASS  20.2s not_found What is the Google VetsCloud Bootcamp and when does it start?  cited []
+24 PASS   0.0s handoff   How do I appeal my VA disability rating?  cited [], handoff=True
+25 PASS  24.1s handoff   How much will the GI Bill housing allowance pay me in Austin?  cited [], handoff=False
+{'model': 'sfv-qwen2.5-3b', 'passed': 20, 'total': 25, 'median_seconds_when_model_ran': 14.3}

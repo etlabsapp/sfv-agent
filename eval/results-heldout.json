@@ -1,0 +1,195 @@
+{
+ "summary": {
+  "model": "sfv-qwen2.5-3b",
+  "passed": 10,
+  "total": 10,
+  "median_seconds_when_model_ran": 16.65
+ },
+ "rows": [
+  {
+   "n": 1,
+   "type": "programs",
+   "q": "Free CDL truck driving school in Iowa?",
+   "pass": true,
+   "detail": "cited ['hawkeye-class-a-cdl-trucking-with-the-troops-grant', 'indian-hills-class-a-cdl-driving-futures-grant', 'dmacc-class-a-cdl-fmcsa-veteran-grant']",
+   "seconds": 34.1,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "CDL",
+      "state": "IA"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Hawkeye Class A CDL (Trucking with the Troops Grant)**: Free and open for veterans and active service members from all U.S. Armed Forces branches, including the National Guard and Reserves, and their spouses and children. You must read, speak and write English, get an Iowa Class A permit, pass a DOT physical and drug screen, and register with the FMCSA Clearinghouse.\n- **Indian Hills Class A CDL (Driving Futures Grant)**: Free and open for veterans, active-duty service members, National Guard and Reserve members, and eligible spouses and dependent children. You must meet IHCC's program rules on age, driving history, safety standards and career readiness. Class prerequisites: 18 or older, a CDL permit, a certified copy of your motor vehicle record (MVR)\n- **DMACC Class A CDL (FMCSA Veteran Grant)**: Free and open for current military, veterans, or the spouse or child of a veteran may qualify for the FMCSA Veteran Grant. You must get an Iowa CDL permit before the course, and get grant approval before registering.\n\nCheck the official link for more details.\n\nSources:\n- Hawkeye Class A CDL (Trucking with the Troops Grant) (In-person; Waterloo, IA: Regional Transportation Training Center (6433 Hammond Ave); also offered in Peosta and Waukon, I): https://www.hawkeyecollege.edu/programs/driver-and-operator-training/trucking-with-the-troops-grant (details: https://skillsforvets.org/programs/hawkeye-class-a-cdl-trucking-with-the-troops-grant/)\n- Indian Hills Class A CDL (Driving Futures Grant) (In-person; Ottumwa, IA: Indian Hills Community College North Campus.): https://indianhills.edu/cews/drivingfutures.php (details: https://skillsforvets.org/programs/indian-hills-class-a-cdl-driving-futures-grant/)\n- DMACC Class A CDL (FMCSA Veteran Grant) (In-person; Iowa (DMACC Transportation Institute); theory course online): https://www.dmacc.edu/careertraining/commercial-vehicle-operator.html (details: https://skillsforvets.org/programs/dmacc-class-a-cdl-fmcsa-veteran-grant/)"
+  },
+  {
+   "n": 2,
+   "type": "programs",
+   "q": "How do I get a job as a data center technician?",
+   "pass": true,
+   "detail": "cited ['microsoft-military-datacenter-pathway-mdp-skillbridge', 'equinix-skillbridge-data-center-trainee-programs', 'laurel-ridge-data-center-technician-credential']",
+   "seconds": 21.9,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "data center technician",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "spouse claim not supported for equinix-skillbridge-data-center-trainee-programs; claim removed",
+    "spouse claim not supported for laurel-ridge-data-center-technician-credential; claim removed"
+   ],
+   "answer": "- **SkillBridge datacenter pathway with Microsoft**: Free and available to veterans and spouses, fits your need of a data center technician job.\n- **Equinix SkillBridge data center trainee programs**: Free and available to veterans, fits your need of a data center technician job.\n- **Laurel Ridge Data Center Technician credential**: Free and available to veterans, fits your need of a data center technician job.\n\nCheck the official pages for more details.\n\nSources:\n- SkillBridge datacenter pathway with Microsoft (Hybrid): https://military.microsoft.com/mdp/ (details: https://skillsforvets.org/programs/microsoft-military-datacenter-pathway-mdp-skillbridge/)\n- Equinix SkillBridge data center trainee programs (In-person; Ashburn VA, San Jose, Atlanta, Chicago, Dallas and other sites): https://careers.equinix.com/military-programs (details: https://skillsforvets.org/programs/equinix-skillbridge-data-center-trainee-programs/)\n- Laurel Ridge Data Center Technician credential (In-person; Middletown and Warrenton, VA): https://laurelridge.edu/degree/data-center-technician/ (details: https://skillsforvets.org/programs/laurel-ridge-data-center-technician-credential/)"
+  },
+  {
+   "n": 3,
+   "type": "programs",
+   "q": "I want to learn AI and machine learning online.",
+   "pass": true,
+   "detail": "cited ['google-machine-learning-crash-course', 'mit-opencourseware-6-036-6-s191-intro-to-deep-learning', 'deeplearning-ai-short-courses']",
+   "seconds": 11.1,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "AI machine learning",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "dropped free_only (user did not ask for free)"
+   ],
+   "answer": "- **Google Machine Learning Crash Course**: Free and open to all learners, check prerequisites before hands-on work.\n- **MIT OpenCourseWare 6.036 Introduction to Machine Learning**: Free and open to all learners, check prerequisites before starting.\n- **DeepLearning.AI short courses**: Free and open to all learners, check prerequisites by course.\n\nCheck the official pages for more details.\n\nSources:\n- Google Machine Learning Crash Course (Online): https://developers.google.com/machine-learning/crash-course (details: https://skillsforvets.org/programs/google-machine-learning-crash-course/)\n- MIT OpenCourseWare 6.036 Introduction to Machine Learning (Online): https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/ (details: https://skillsforvets.org/programs/mit-opencourseware-6-036-6-s191-intro-to-deep-learning/)\n- DeepLearning.AI short courses (Online): https://www.deeplearning.ai/courses (details: https://skillsforvets.org/programs/deeplearning-ai-short-courses/)"
+  },
+  {
+   "n": 4,
+   "type": "programs",
+   "q": "I'm Air Force. Can I get my certs paid for?",
+   "pass": true,
+   "detail": "cited ['air-force-cool-credentialing', 'cloud-veterans-free-aws-azure-google-cloud-training', 'salesforce-vetforce-trailhead-military']",
+   "seconds": 19.0,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "certification",
+      "branch": "Air Force"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "model answered without searching; asked it to search first"
+   ],
+   "answer": "- **Air Force COOL credentialing (Air Force and Space Force)**: covers certifications relevant to Air Force career field, funded, free without using GI Bill or other benefits, check the official page for cost.\n- **Free self-paced AWS, Azure and Google Cloud training, with exam fees reimbursed up to $100 (Cloud Veterans)**: covers certifications relevant to Cloud career field, free training, exam fees reimbursed after you pay, free without using GI Bill or other benefits, check the official page for cost.\n- **Salesforce Vetforce (Trailhead Military)**: covers certifications relevant to Cloud career field, free, free without using GI Bill or other benefits, check the official page for eligibility and format details.\nConfirm details on the official pages.\n\nSources:\n- Air Force COOL credentialing (Air Force and Space Force) (Online): https://myairforcebenefits.us.af.mil/Benefit-Library/Federal-Benefits/Air-Force-Credentialing-Opportunities-On-Line-(AF-COOL)?serv=26 (details: https://skillsforvets.org/programs/air-force-cool-credentialing/)\n- Free self-paced AWS, Azure and Google Cloud training, with exam fees reimbursed up to $100 (Cloud Veterans) (Online; Online (U.S.)): https://www.cloudveterans.org/apply (details: https://skillsforvets.org/programs/cloud-veterans-free-aws-azure-google-cloud-training/)\n- Salesforce Vetforce (Trailhead Military) (Online): https://trailhead.salesforce.com/salesforce-military (details: https://skillsforvets.org/programs/salesforce-vetforce-trailhead-military/)"
+  },
+  {
+   "n": 5,
+   "type": "programs",
+   "q": "Is there carpentry training for veterans?",
+   "pass": true,
+   "detail": "cited ['ubc-military-veterans-program-free-carpenter-and-millwright-training', 'veterans-resource-center-dallas-free-welding-training', 'iupat-painters-and-allied-trades-veterans-program']",
+   "seconds": 19.3,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "carpentry",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **UBC Military Veterans Program - free carpenter and millwright training**: Free carpenter and millwright training is available, offered by United Brotherhood of Carpenters (UBC) on military bases including Fort Hood, Fort Campbell and Fort Drum. Training is free and available to veterans without prior experience, check the official page for details.\n- **Veterans Resource Center Dallas - free welding training**: Free welding training is available, provided by Veterans Resource Center (with Dallas College and Airgas). Check the eligibility and format details; additional geographic conditions may apply.\n- **Free painting, drywall & glazing trade training for vets (IUPAT)**: Free painting, drywall & glazing trade training is available, offered by International Union of Painters and Allied Trades. Check the eligibility and format details; US locations via IUPAT.\n\nTo confirm details, visit the official pages.\n\nSources:\n- UBC Military Veterans Program - free carpenter and millwright training (format: see official page; Military-base cohorts including Fort Hood, Fort Campbell and Fort Drum. UBC lists seven sites and is adding mo): https://ubcmvp.org/training-tracks/carpenters-track-free-carpenter-training-for-veterans/ (details: https://skillsforvets.org/programs/ubc-military-veterans-program-free-carpenter-and-millwright-training/)\n- Veterans Resource Center Dallas - free welding training (format: see official page): https://vrcdallas.org/resource/welding/ (details: https://skillsforvets.org/programs/veterans-resource-center-dallas-free-welding-training/)\n- Free painting, drywall & glazing trade training for vets (IUPAT) (In-person; US (locations via IUPAT)): https://www.iupat.org/about-the-iupat/our-programs/painters-and-allied-trades-veterans-program-pat-vp/ (details: https://skillsforvets.org/programs/iupat-painters-and-allied-trades-veterans-program/)"
+  },
+  {
+   "n": 6,
+   "type": "programs",
+   "q": "I want to be a Salesforce administrator.",
+   "pass": true,
+   "detail": "cited ['salesforce-vetforce-trailhead-military', 'f3usa-skillbridge-cybersecurity', 'oxford-unesco-course-on-ai-and-digital-transformation-in-the-public']",
+   "seconds": 13.1,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "Salesforce administrator"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Salesforce Vetforce (Trailhead Military)**: Free and open to all U.S., Canada, UK, Australia, NZ veterans and their spouses, no GI Bill required, cost is free.\n- **F3USA SkillBridge Cybersecurity**: Free and open to all U.S. active-duty service members within 180 days of separation, no GI Bill required, cost is free.\n- **Oxford / UNESCO course on AI and digital transformation in the public sector**: Free and open to all civil servants and public-sector leaders worldwide, no GI Bill required, cost is free.\n\nPlease confirm details on the official pages.\n\nSources:\n- Salesforce Vetforce (Trailhead Military) (Online): https://trailhead.salesforce.com/salesforce-military (details: https://skillsforvets.org/programs/salesforce-vetforce-trailhead-military/)\n- F3USA SkillBridge Cybersecurity (Online; Online (live virtual).): https://f3usa.org/skillbridge/ (details: https://skillsforvets.org/programs/f3usa-skillbridge-cybersecurity/)\n- Oxford / UNESCO course on AI and digital transformation in the public sector (Online): https://oxsbs.link/unesco (details: https://skillsforvets.org/programs/oxford-unesco-course-on-ai-and-digital-transformation-in-the-public/)"
+  },
+  {
+   "n": 7,
+   "type": "programs",
+   "q": "I want to be an auto mechanic.",
+   "pass": true,
+   "detail": "cited ['academy-of-advanced-manufacturing', 'gm-shifting-gears-automotive-technician-training-program', 'hiring-our-heroes-skilled-trades-academy']",
+   "seconds": 14.3,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "auto mechanic"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Academy of Advanced Manufacturing**: This program is for veterans and offers employer-funded training in auto mechanics. It is free without using GI Bill or other benefits.\n- **GM Shifting Gears Automotive Technician Training Program**: This online program is for transitioning Army soldiers and offers employer-funded training in auto mechanics. It is free without using GI Bill or other benefits.\n- **Hiring Our Heroes Skilled Trades Academy**: This hybrid program is for construction, manufacturing, and automotive trades and offers free training. Veterans, spouses, and dependents ages 18-26 may qualify, but mechanical aptitude and relocation are required.\n\nPlease confirm details on the official pages.\n\nSources:\n- Academy of Advanced Manufacturing (In-person; Confirm location and attendance requirements.): https://www.manpower.com/en/for-job-seekers/aam (details: https://skillsforvets.org/programs/academy-of-advanced-manufacturing/)\n- GM Shifting Gears Automotive Technician Training Program (Online): https://search-careers.gm.com/en/gm-life-stories/employee-stories/from-the-front-lines-to-the-service-bay-gm-s-shifting-gears-program-trains-service-members-for-automotive-careers/ (details: https://skillsforvets.org/programs/gm-shifting-gears-automotive-technician-training-program/)\n- Hiring Our Heroes Skilled Trades Academy (Hybrid): https://www.hiringourheroes.org/career-services/skilled-trades-academy/ (details: https://skillsforvets.org/programs/hiring-our-heroes-skilled-trades-academy/)"
+  },
+  {
+   "n": 8,
+   "type": "not_found",
+   "q": "Tell me about the Amazon Warrior Coders Academy.",
+   "pass": true,
+   "detail": "cited []",
+   "seconds": 10.7,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "Amazon Warrior Coders Academy"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "model answered without searching; asked it to search first",
+    "named program not in directory: ['Amazon Warrior Coders Academy']"
+   ],
+   "answer": "I couldn't find \"Amazon Warrior Coders Academy\" in the Skills for Vets directory, so I can't give you a link, dates or eligibility for it. Email info@skillsforvets.org if you think it should be listed, or browse https://skillsforvets.org/programs/ for similar programs."
+  },
+  {
+   "n": 9,
+   "type": "handoff",
+   "q": "Can you help me with my divorce paperwork?",
+   "pass": true,
+   "detail": "cited [], handoff=True",
+   "seconds": 0.0,
+   "tool_calls": [],
+   "guardrail_events": [
+    "scope check: handoff"
+   ],
+   "answer": "I can only help find training programs in the Skills for Vets directory, so I can't answer legal questions. This is outside what the Skills for Vets program finder can answer reliably. Email info@skillsforvets.org and a person will follow up."
+  },
+  {
+   "n": 10,
+   "type": "handoff",
+   "q": "What are the side effects of my sleep medication?",
+   "pass": true,
+   "detail": "cited [], handoff=True",
+   "seconds": 0.0,
+   "tool_calls": [],
+   "guardrail_events": [
+    "scope check: handoff"
+   ],
+   "answer": "I can only help find training programs in the Skills for Vets directory, so I can't answer medical questions. This is outside what the Skills for Vets program finder can answer reliably. Email info@skillsforvets.org and a person will follow up."
+  }
+ ]
+}

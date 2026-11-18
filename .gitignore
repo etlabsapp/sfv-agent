@@ -1,0 +1,29 @@
+# Virtualenvs and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Model weights and Ollama blobs (~2.3 GB). setup.sh downloads these.
+models/*.gguf
+*.gguf
+.ollama/
+blobs/
+
+# Official Ollama installer copy and its local install log (not part of this project)
+install-ollama.sh
+install.log
+
+# Runtime logs (keep eval/*.log; the README cites those runs)
+*.log
+!eval/*.log
+ollama.log
+web.log
+
+# Environment and editor
+.env
+.DS_Store
+.idea/
+.vscode/

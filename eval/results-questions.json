@@ -1,0 +1,505 @@
+{
+ "summary": {
+  "model": "sfv-qwen2.5-3b",
+  "passed": 25,
+  "total": 25,
+  "median_seconds_when_model_ran": 15.8
+ },
+ "rows": [
+  {
+   "n": 1,
+   "type": "programs",
+   "q": "I'm in Virginia and want to get into fiber optics. Anything near me?",
+   "pass": true,
+   "detail": "cited ['nova-workforce-fiber-optics-installer-and-technician', 'laurel-ridge-fiber-optic-installer-and-technician']",
+   "seconds": 13.9,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "fiber optics",
+      "state": "VA"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **NOVA Workforce Fiber Optics Installer and Technician courses**: This program is free if eligible and covers fiber optics installation and technician roles. Check the official link for more details.\n- **Laurel Ridge Fiber Optic Installer and Technician courses**: This program is also free if eligible and covers fiber optics installation and technician roles. Check the official link for more details.\nEnd of information. To confirm details, visit the official links.\n\nSources:\n- NOVA Workforce Fiber Optics Installer and Technician courses (In-person; NOVA Manassas, VA): https://nvcc.augusoft.net/connect/ClassInfo/ClassInformation?int_class_id=24246 (details: https://skillsforvets.org/programs/nova-workforce-fiber-optics-installer-and-technician/)\n- Laurel Ridge Fiber Optic Installer and Technician courses (In-person; Fauquier Campus, Warrenton, VA): https://laurelridgeworkforce.com/start-or-enhance-your-career-in-fiber-optics/ (details: https://skillsforvets.org/programs/laurel-ridge-fiber-optic-installer-and-technician/)"
+  },
+  {
+   "n": 2,
+   "type": "programs",
+   "q": "Is there free welding training in Texas?",
+   "pass": true,
+   "detail": "cited ['veterans-resource-center-dallas-free-welding-training', 'ua-veterans-in-piping-vip-welding-hvacr-and-fire-sprinkler-skillbridge']",
+   "seconds": 15.5,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "welding",
+      "state": "TX",
+      "free_only": true
+     }
+    }
+   ],
+   "guardrail_events": [
+    "location claim ['TX'] with no state on file for veterans-resource-center-dallas-free-welding-training; claim removed",
+    "spouse claim not supported for ua-veterans-in-piping-vip-welding-hvacr-and-fire-sprinkler-skillbridge; claim removed"
+   ],
+   "answer": "- **Veterans Resource Center Dallas - free welding training**: no state is listed for this program. Check the official page for locations.\n- **SkillBridge welding, HVACR & fire sprinkler training**: Free welding training for active duty members through SkillBridge. Cost is free without using GI Bill or other benefits.\n- Check the official links for more details on eligibility and format.\n\nSources:\n- Veterans Resource Center Dallas - free welding training (format: see official page): https://vrcdallas.org/resource/welding/ (details: https://skillsforvets.org/programs/veterans-resource-center-dallas-free-welding-training/)\n- SkillBridge welding, HVACR & fire sprinkler training (format: see official page): https://www.uavip.org/faq (details: https://skillsforvets.org/programs/ua-veterans-in-piping-vip-welding-hvacr-and-fire-sprinkler-skillbridge/)"
+  },
+  {
+   "n": 3,
+   "type": "programs",
+   "q": "How can I get my FAA drone pilot license?",
+   "pass": true,
+   "detail": "cited ['vets-to-drones-faa-part-107-prep', 'cb2tb-wings-prosper-faa-part-107']",
+   "seconds": 27.8,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "drone pilot",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Vets to Drones \u2014 Free Drone Training, Jobs & Community (FAA Part 107 prep)**: Free drone training, jobs, and community support for veterans and currently serving members, verified via GovX. Spouses and family of a V2D member can train free through partner SPOTR; Gold Star families can use SPOTR on their own. SPOTR/family access does not include free FAA testing. (Check the official page)\n- **Free FAA Part 107 drone training**: Free FAA Part 107 drone training for veterans and military spouses in Coastal Georgia. (Check the official page)\n\nPlease confirm details on the official pages.\n\nSources:\n- Vets to Drones \u2014 Free Drone Training, Jobs & Community (FAA Part 107 prep) (Online; Online (worldwide). FAA knowledge test at an FAA-approved testing center; some military installations offer th): https://vetstodrones.org/join.html (details: https://skillsforvets.org/programs/vets-to-drones-faa-part-107-prep/)\n- Free FAA Part 107 drone training (In-person; In person in Coastal Georgia (CB2TB is based in Richmond Hill, GA; serves a 10-county Coastal Georgia region).): https://www.cb2tb.com/wings-initiative/ (details: https://skillsforvets.org/programs/cb2tb-wings-prosper-faa-part-107/)"
+  },
+  {
+   "n": 4,
+   "type": "programs",
+   "q": "I want to get my PMP certification. What's free?",
+   "pass": true,
+   "detail": "cited ['black-diamond-charities-free-project-management-fundamentals', 'pmi-military-veteran-resources', 'pmi-kickoff']",
+   "seconds": 24.9,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "PMP certification",
+      "free_only": true
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Black Diamond Charities - free project management fundamentals**: Free project management fundamentals course for honorably discharged US veterans, active-duty/Reserve/Guard and spouses; no prerequisites. Homepage limits spouse seats to five. Check the official link for more details.\n- **PMI free military career resources and introductory learning**: Free project management basics resources and introductory learning for military members, veterans and spouses; individual PMI credentials retain education, training and experience requirements. Check the official link for more details.\n- **Free project management basics in under an hour**: Free project management basics in under an hour by lottery. Check the official link for more details.\n\nConfirm details on the official pages.\n\nSources:\n- Black Diamond Charities - free project management fundamentals (format: see official page): https://www.blackdiamondcharities.org/ (details: https://skillsforvets.org/programs/black-diamond-charities-free-project-management-fundamentals/)\n- PMI free military career resources and introductory learning (Online): https://www.pmi.org/military (details: https://skillsforvets.org/programs/pmi-military-veteran-resources/)\n- Free project management basics in under an hour (Online; Online; eligibility restrictions still apply.): https://www.pmi.org/kickoff (details: https://skillsforvets.org/programs/pmi-kickoff/)"
+  },
+  {
+   "n": 5,
+   "type": "programs",
+   "q": "Can I get a real estate license course for free in New York?",
+   "pass": true,
+   "detail": "cited ['resnys-free-real-estate-salesperson-course-for-military-new-york', 'intuit-academy-bookkeeping-and-tax-training-for-the-military-community']",
+   "seconds": 17.1,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "real estate license",
+      "state": "NY",
+      "free_only": true
+     }
+    }
+   ],
+   "guardrail_events": [
+    "location claim ['NY'] with no state on file for resnys-free-real-estate-salesperson-course-for-military-new-york; claim removed"
+   ],
+   "answer": "- **RESNYS free real estate salesperson course for military (New York)**: no state is listed for this program. Check the official page for locations.\n- **Intuit Academy bookkeeping and tax training for the military community**: This free online course is for military learners and can be taken without prior tax work experience. It's offered by Intuit and is free without using GI Bill or other benefits. (check the official link)\n\nPlease confirm the details on the official pages.\n\nSources:\n- RESNYS free real estate salesperson course for military (New York) (format: see official page): https://resnys.com/admissions-for-military-first-responders/ (details: https://skillsforvets.org/programs/resnys-free-real-estate-salesperson-course-for-military-new-york/)\n- Intuit Academy bookkeeping and tax training for the military community (Online; United States; online.): https://academy.intuit.com/ (details: https://skillsforvets.org/programs/intuit-academy-bookkeeping-and-tax-training-for-the-military-community/)"
+  },
+  {
+   "n": 6,
+   "type": "programs",
+   "q": "I want to work in healthcare as a nursing assistant (CNA).",
+   "pass": true,
+   "detail": "cited ['american-medical-careers-free-cna-training-for-veterans', 'palmetto-goodwill-healthcare-career-training-pathways', 'dwyer-healthcare-career-training']",
+   "seconds": 12.5,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "nursing assistant",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **American Medical Careers free CNA training for veterans**: Free training for veterans in Los Angeles, CA. Cost is free, no benefits required.\n- **Palmetto Goodwill Healthcare Career Training Pathways**: Free training in South Carolina. Cost is free with grant, no benefits required.\n- **Dwyer free nursing-assistant training: Maryland**: Free training in Maryland. Cost is free instruction, no benefits required.\nTell the user to confirm details on the official pages.\n\nSources:\n- American Medical Careers free CNA training for veterans (In-person; Los Angeles, CA): https://americanmedicalcareers.org/free-nursing-assistant-classes-for-veterans/ (details: https://skillsforvets.org/programs/american-medical-careers-free-cna-training-for-veterans/)\n- Palmetto Goodwill Healthcare Career Training Pathways (In-person; South Carolina: Palmetto Goodwill Career Opportunity Centers in Summerville, Johns Island, Longs (Little River): https://www.palmettogoodwill.org/service/healthcare-career-training-sc/ (details: https://skillsforvets.org/programs/palmetto-goodwill-healthcare-career-training-pathways/)\n- Dwyer free nursing-assistant training: Maryland (In-person; Baltimore, Maryland; Health Focus, It Works Learning Center or Soul of Medicine locations listed by Maryland L): https://dwyerworkforcedev.org/healthcare-career-training/ (details: https://skillsforvets.org/programs/dwyer-healthcare-career-training/)"
+  },
+  {
+   "n": 7,
+   "type": "programs",
+   "q": "Any training for solar energy jobs?",
+   "pass": true,
+   "detail": "cited ['irec-exploring-careers-in-the-solar-industry-free-online-course', 'solar-energy-international-free-renewable-energy-courses', 'gaf-roofing-academy-tuition-free-roofer-training']",
+   "seconds": 15.8,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "solar energy"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **IREC Exploring Careers in the Solar Industry - free online course**: free online course for those exploring careers in solar energy, suitable for veterans and service members, cost is free and can be used without using GI Bill or other benefits.\n- **Solar Energy International free renewable-energy courses**: free renewable energy courses offered by Solar Energy International, available online, suitable for general public, cost is free instruction.\n- **GAF Roofing Academy (tuition-free roofer training)**: free roofing training offered by GAF, available in-person, suitable for people seeking entry roofing work, including veterans, cost is free.\n\nCheck the official page for more details.\n\nSources:\n- IREC Exploring Careers in the Solar Industry - free online course (Online): https://irecusa.org/programs/solar-ready-vets/for-service-members-and-veterans/ (details: https://skillsforvets.org/programs/irec-exploring-careers-in-the-solar-industry-free-online-course/)\n- Solar Energy International free renewable-energy courses (Online; Online self-paced: RE100 6 hours with 120-day access; RE102 3 hours; RE101 solar math 4 hours; SHOL101 solar h): https://www.solarenergy.org/free-learning/ (details: https://skillsforvets.org/programs/solar-energy-international-free-renewable-energy-courses/)\n- GAF Roofing Academy (tuition-free roofer training) (In-person): https://www.gaf.com/en-us/for-pros/care-training/roofing-academy (details: https://skillsforvets.org/programs/gaf-roofing-academy-tuition-free-roofer-training/)"
+  },
+  {
+   "n": 8,
+   "type": "programs",
+   "q": "I want an AWS cloud certification.",
+   "pass": true,
+   "detail": "cited ['aws-re-start', 'aws-skill-builder-and-free-certification-resources-for-military', 'cloud-veterans-free-aws-azure-google-cloud-training']",
+   "seconds": 12.6,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "AWS cloud certification"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **AWS re/Start**: This program offers free AWS cloud certification and is open to unemployed/underemployed individuals, with no technology background required. (check the official link)\n- **AWS Skill Builder: free cloud training and optional paid exam prep**: Provides free AWS cloud training and optional paid exam prep, available online and free without using GI Bill or other benefits. (check the official link)\n- **Free self-paced AWS, Azure and Google Cloud training, with exam fees reimbursed up to $100 (Cloud Veterans)**: Offers free self-paced AWS, Azure, and Google Cloud training with exam fees reimbursed up to $100 for honorably discharged U.S. veterans and their families. (check the official link)\n\nPlease confirm details on the official pages.\n\nSources:\n- AWS re/Start (format: see official page): https://aws.amazon.com/training/restart/ (details: https://skillsforvets.org/programs/aws-re-start/)\n- AWS Skill Builder: free cloud training and optional paid exam prep (Online; Nationwide (online)): https://aws.amazon.com/training/digital/ (details: https://skillsforvets.org/programs/aws-skill-builder-and-free-certification-resources-for-military/)\n- Free self-paced AWS, Azure and Google Cloud training, with exam fees reimbursed up to $100 (Cloud Veterans) (Online; Online (U.S.)): https://www.cloudveterans.org/apply (details: https://skillsforvets.org/programs/cloud-veterans-free-aws-azure-google-cloud-training/)"
+  },
+  {
+   "n": 9,
+   "type": "programs",
+   "q": "Are there free online cybersecurity programs for military spouses?",
+   "pass": true,
+   "detail": "cited ['fortinet-veterans-program', 'purdue-northwest-cwct-online-cyber-ai-training-paths', 'sva-cybersecurity-certificate-google-cybersecurity-professional']",
+   "seconds": 14.1,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "cybersecurity",
+      "audience": "spouse",
+      "free_only": true
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Free Fortinet NSE training for vets**: Free Fortinet NSE training for vets, offered by Fortinet Training Institute, is a strong fit for free online cybersecurity training for military spouses.\n- **Free online cyber and AI training paths**: Free online cyber and AI training paths, provided by Purdue University Northwest / Catholic University VUB referral, is a strong fit for free online cybersecurity training for military spouses.\n- **Free Google Cybersecurity Professional Certificate path**: Free Google Cybersecurity Professional Certificate path, offered by Student Veterans of America, is a strong fit for free online cybersecurity training for military spouses.\n\nTo confirm details, visit the official pages.\n\nSources:\n- Free Fortinet NSE training for vets (Online; Nationwide (online)): https://www.fortinet.com/training/veterans-program (details: https://skillsforvets.org/programs/fortinet-veterans-program/)\n- Free online cyber and AI training paths (Online; Online; eligibility restrictions still apply.): https://www.pnw.edu/cybersecurity/cwct/steps-to-apply/ (details: https://skillsforvets.org/programs/purdue-northwest-cwct-online-cyber-ai-training-paths/)\n- Free Google Cybersecurity Professional Certificate path (Online): https://studentveterans.org/success-hub/career-center/professional-development-series/cybersecurity-certificate/ (details: https://skillsforvets.org/programs/sva-cybersecurity-certificate-google-cybersecurity-professional/)"
+  },
+  {
+   "n": 10,
+   "type": "programs",
+   "q": "I'm active duty getting out in 6 months. Any SkillBridge programs in IT or cyber?",
+   "pass": true,
+   "detail": "cited ['f3usa-skillbridge-cybersecurity', 'equinix-skillbridge-data-center-trainee-programs']",
+   "seconds": 17.1,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "IT",
+      "audience": "skillbridge"
+     }
+    },
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "cyber",
+      "audience": "skillbridge"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "dropped free_only (user did not ask for free)",
+    "set audience=skillbridge from question",
+    "dropped free_only (user did not ask for free)",
+    "set audience=skillbridge from question"
+   ],
+   "answer": "- **F3USA SkillBridge Cybersecurity**: Online cybersecurity training for active-duty members within 180 days of separation, free without using GI Bill, check the official link for details.\n- **Equinix SkillBridge data center trainee programs**: In-person IT/Software training in VA, funded, check the official link for details.\nConfirm details on the official pages.\n\nSources:\n- F3USA SkillBridge Cybersecurity (Online; Online (live virtual).): https://f3usa.org/skillbridge/ (details: https://skillsforvets.org/programs/f3usa-skillbridge-cybersecurity/)\n- Equinix SkillBridge data center trainee programs (In-person; Ashburn VA, San Jose, Atlanta, Chicago, Dallas and other sites): https://careers.equinix.com/military-programs (details: https://skillsforvets.org/programs/equinix-skillbridge-data-center-trainee-programs/)"
+  },
+  {
+   "n": 11,
+   "type": "programs",
+   "q": "I want to start my own business after the military.",
+   "pass": true,
+   "detail": "cited ['ebv-entrepreneurship-bootcamp-for-veterans-9-host-universities', 'boots-to-business-b2b', 'dav-patriot-boot-camp']",
+   "seconds": 17.3,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "business",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Free entrepreneurship bootcamp for veterans**: Free entrepreneurship bootcamp for veterans, offered at multiple US universities, cost is free and can be used without using GI Bill or other benefits. (check the official link)\n- **Boots to Business (B2B)**: Boots to Business (B2B) program, hybrid format, free and can be used without using GI Bill or other benefits. (check the official link)\n- **DAV Patriot Boot Camp**: DAV Patriot Boot Camp, free and can be used without using GI Bill or other benefits. (check the official link)\n\nPlease confirm details on the official pages.\n\nSources:\n- Free entrepreneurship bootcamp for veterans (Hybrid; Multiple US universities (see Notes)): https://ivmf.syracuse.edu/programs/entrepreneurship/start-up/ebv/ (details: https://skillsforvets.org/programs/ebv-entrepreneurship-bootcamp-for-veterans-9-host-universities/)\n- Boots to Business (B2B) (Hybrid): https://www.sba.gov/counseling/boots-to-business/ (details: https://skillsforvets.org/programs/boots-to-business-b2b/)\n- DAV Patriot Boot Camp (format: see official page): https://patriotbootcamp.org/patriot-boot-camp/ (details: https://skillsforvets.org/programs/dav-patriot-boot-camp/)"
+  },
+  {
+   "n": 12,
+   "type": "programs",
+   "q": "Electrician apprenticeship in Maryland?",
+   "pass": true,
+   "detail": "cited ['ibew-local-26-washington-dc-jatc-apprenticeships', 'ua-local-486-paid-plumbing-pipefitting-hvacr-apprenticeship-md-de', 'trades-mosaic-skillbridge-hvac-plumbing-electrical']",
+   "seconds": 23.3,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "electrician",
+      "state": "MD"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Paid electrical & telecom apprenticeships (DC, MD, Northern VA)**: Paid electrical & telecom apprenticeships (DC, MD, Northern VA) in Lanham, MD training center; work in MD, Northern VA and DC, fits cost and free without benefits. To confirm, visit the official link.\n- **Paid plumbing, pipefitting & HVACR apprenticeship in Maryland and Delaware (UA Local 486)**: Paid plumbing, pipefitting & HVACR apprenticeship in Maryland and Delaware (UA Local 486) in Rosedale (Baltimore County) and Hagerstown, Maryland, or Seaford, Delaware. Jobs in Baltimore City and nearby counties, the Hagerstown and Frederick areas, and Sussex County, Delaware, fits cost and free without benefits. To confirm, visit the official link.\n- **Trades Mosaic SkillBridge (HVAC, plumbing, gas fitting, electrical)**: Trades Mosaic SkillBridge (HVAC, plumbing, gas fitting, electrical) in Greater Richmond VA (Ashland / Fresh Air) and Silver Spring MD / DC Metro (Tim Whistler Plumbing), fits cost and free without benefits. To confirm, visit the official link.\n\nSources:\n- Paid electrical & telecom apprenticeships (DC, MD, Northern VA) (In-person; Lanham, MD training center; work in MD, Northern VA and DC): https://ibewlocal26.org/join-as-individual/training/ (details: https://skillsforvets.org/programs/ibew-local-26-washington-dc-jatc-apprenticeships/)\n- Paid plumbing, pipefitting & HVACR apprenticeship in Maryland and Delaware (UA Local 486) (In-person; Classes in Rosedale (Baltimore County) and Hagerstown, Maryland, or Seaford, Delaware. Jobs in Baltimore City ): https://getpiping.com/apprenticeship-application (details: https://skillsforvets.org/programs/ua-local-486-paid-plumbing-pipefitting-hvacr-apprenticeship-md-de/)\n- Trades Mosaic SkillBridge (HVAC, plumbing, gas fitting, electrical) (In-person; Greater Richmond VA (Ashland / Fresh Air) and Silver Spring MD / DC Metro (Tim Whistler Plumbing)): https://www.tradesmosaic.com/skillbridge/about (details: https://skillsforvets.org/programs/trades-mosaic-skillbridge-hvac-plumbing-electrical/)"
+  },
+  {
+   "n": 13,
+   "type": "programs",
+   "q": "Where can I learn HVAC?",
+   "pass": true,
+   "detail": "cited ['hvac-school-free-hvac-r-mini-courses', 'goodwill-new-mexico-free-hvac-and-heat-pump-installation-training', 'goodwill-southern-piedmont-free-hvac-training-with-construction-basics-prerequisite']",
+   "seconds": 20.4,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "HVAC"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **HVAC School free HVAC/R mini-courses**: Free instruction, online. No veteran-only restriction is stated.\n- **Goodwill New Mexico free HVAC and heat-pump installation training**: Free instruction, in-person in Albuquerque, New Mexico. No veteran-only restriction is stated.\n- **Goodwill Southern Piedmont free HVAC training with Construction Basics prerequisite**: Free instruction, in-person in Goodwill Construction Skills Training Center, Charlotte, North Carolina; local service area only. No veteran-only restriction is stated.\n\nCheck the official page for more details.\n\nSources:\n- HVAC School free HVAC/R mini-courses (Online; Online): https://www.hvacrschool.com/courses/ (details: https://skillsforvets.org/programs/hvac-school-free-hvac-r-mini-courses/)\n- Goodwill New Mexico free HVAC and heat-pump installation training (In-person; Albuquerque, New Mexico): https://www.goodwillnm.org/heatpump (details: https://skillsforvets.org/programs/goodwill-new-mexico-free-hvac-and-heat-pump-installation-training/)\n- Goodwill Southern Piedmont free HVAC training with Construction Basics prerequisite (In-person; Goodwill Construction Skills Training Center, Charlotte, North Carolina; local service area only): https://goodwillsp.org/course/hvac/ (details: https://skillsforvets.org/programs/goodwill-southern-piedmont-free-hvac-training-with-construction-basics-prerequisite/)"
+  },
+  {
+   "n": 14,
+   "type": "programs",
+   "q": "I want to become an aircraft mechanic (A&P).",
+   "pass": true,
+   "detail": "cited ['flex-air-aviation-maintenance-skillbridge-a-and-p', 'viper-a-and-p-program-free-faa-a-and-p-with-a-job-offer', 'operation-next-advanced-manufacturing-training']",
+   "seconds": 22.1,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "aircraft mechanic",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Flex Air Aviation Maintenance SkillBridge (A&P)**: Free training for aircraft mechanics, available in California and Kansas. Check the official link for more details.\n- **Employer-paid FAA A&P prep with a job offer**: Employer-funded FAA A&P prep with a job offer for service members from various branches. Check the official link for more details.\n- **Operation Next Advanced Manufacturing Training**: Free advanced manufacturing training available in Indiana and Michigan. Check the official link for more details.\n\nPlease confirm details on the official pages.\n\nSources:\n- Flex Air Aviation Maintenance SkillBridge (A&P) (format: see official page; Partner sites in San Diego, California, and Kansas including Manhattan, Olathe, Kansas City and Wichita.): https://goflexair.com/skillbridge/maintenance (details: https://skillsforvets.org/programs/flex-air-aviation-maintenance-skillbridge-a-and-p/)\n- Employer-paid FAA A&P prep with a job offer (In person; Nellis AFB, Las Vegas, Nev.): https://www.vipertransitions.org/lead-collection (details: https://skillsforvets.org/programs/viper-a-and-p-program-free-faa-a-and-p-with-a-job-offer/)\n- Operation Next Advanced Manufacturing Training (Hybrid; Indiana: Vincennes University (ITM in Plainfield, CNC in Lebanon). Michigan: LIFT, Detroit (Welding, CNC, Robo): https://www.opnextjobs.com/ (details: https://skillsforvets.org/programs/operation-next-advanced-manufacturing-training/)"
+  },
+  {
+   "n": 15,
+   "type": "programs",
+   "q": "Is the Fortinet Veterans Program still open?",
+   "pass": true,
+   "detail": "cited ['fortinet-veterans-program']",
+   "seconds": 15.7,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "cybersecurity",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "model answered without searching; asked it to search first"
+   ],
+   "answer": "**Free Fortinet NSE training for vets**: This program is for cybersecurity training and is still open, check the official page for dates and deadlines.\n\nSources:\n- Free Fortinet NSE training for vets (Online; Nationwide (online)): https://www.fortinet.com/training/veterans-program (details: https://skillsforvets.org/programs/fortinet-veterans-program/)"
+  },
+  {
+   "n": 16,
+   "type": "programs",
+   "q": "I want to learn to code and become a software developer.",
+   "pass": true,
+   "detail": "cited ['freecodecamp-certifications', 'vets-who-code', 'developing-secure-software-lfd121-openssf']",
+   "seconds": 14.8,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "software development",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **freeCodeCamp certifications**: FreeCodeCamp certifications are open to all learners, including veterans, and are free without using GI Bill or other benefits. (skillsforvets.org/freecodecamp-certifications)\n- **Vets Who Code**: Vets Who Code offers free online training for U.S. veterans, service members, and spouses, requiring 20-30 hours of weekly commitment. (skillsforvets.org/vets-who-code)\n- **Developing Secure Software (LFD121, OpenSSF)**: The Developing Secure Software (LFD121, OpenSSF) program is free and open to all, with no military affiliation required. (skillsforvets.org/developing-secure-software-lfd121-openssf)\n\nPlease confirm details on the official pages.\n\nSources:\n- freeCodeCamp certifications (Online): https://www.freecodecamp.org/learn (details: https://skillsforvets.org/programs/freecodecamp-certifications/)\n- Vets Who Code (Online): https://vetswhocode.io/programs/accelerator (details: https://skillsforvets.org/programs/vets-who-code/)\n- Developing Secure Software (LFD121, OpenSSF) (Online): https://training.linuxfoundation.org/training/developing-secure-software-lfd121/ (details: https://skillsforvets.org/programs/developing-secure-software-lfd121-openssf/)"
+  },
+  {
+   "n": 17,
+   "type": "programs",
+   "q": "Any lineman or power line apprenticeships in North Carolina?",
+   "pass": true,
+   "detail": "cited ['duke-energy-distribution-line-apprentice-program', 'selcat-line-construction-apprenticeships', 'charlotte-electrical-jatc-apprenticeship', 'veep-ssvp-substation-technician-with-selcat', 'goodwill-southern-piedmont-free-hvac-training-with-construction-basics-prerequisite']",
+   "seconds": 17.4,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "lineman",
+      "state": "NC"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Duke Energy Distribution Line Apprentice program**: Duke Energy offers an in-person apprenticeship program for line workers in North Carolina and other states, free with employer funding.\n- **SELCAT line construction apprenticeships (substation and underground)**: SELCAT provides in-person apprenticeships for line construction in multiple southeastern states, free with employer funding.\n- **Charlotte Electrical JATC apprenticeship (IBEW Local 379)**: Charlotte Electrical JATC offers an in-person apprenticeship for electricians in North Carolina, free with employer funding.\n- **Substation technician training while serving (SkillBridge)**: VEEP with SELCAT offers an upcoming in-person apprenticeship for substation technicians in multiple southeastern states, funded.\n- **Goodwill Southern Piedmont free HVAC training with Construction Basics prerequisite**: Goodwill Southern Piedmont offers free HVAC training with a Construction Basics prerequisite in North Carolina and South Carolina, free with employer funding.\n\nPlease confirm details on the official pages.\n\nSources:\n- Duke Energy Distribution Line Apprentice program (In-person; Duke Energy service areas): https://www.duke-energy.com/our-company/careers/military-programs (details: https://skillsforvets.org/programs/duke-energy-distribution-line-apprentice-program/)\n- SELCAT line construction apprenticeships (substation and underground) (In-person; Southeast US): https://selcat.com/apprentice-training/apply/ (details: https://skillsforvets.org/programs/selcat-line-construction-apprenticeships/)\n- Charlotte Electrical JATC apprenticeship (IBEW Local 379) (In-person; Charlotte, NC): https://carolinaseti.org/ (details: https://skillsforvets.org/programs/charlotte-electrical-jatc-apprenticeship/)\n- Substation technician training while serving (SkillBridge) (In-person; Moore Haven, FL): https://in2veep.com/cohorts/ (details: https://skillsforvets.org/programs/veep-ssvp-substation-technician-with-selcat/)\n- Goodwill Southern Piedmont free HVAC training with Construction Basics prerequisite (In-person; Goodwill Construction Skills Training Center, Charlotte, North Carolina; local service area only): https://goodwillsp.org/course/hvac/ (details: https://skillsforvets.org/programs/goodwill-southern-piedmont-free-hvac-training-with-construction-basics-prerequisite/)"
+  },
+  {
+   "n": 18,
+   "type": "programs",
+   "q": "I'm in the Navy. Will they pay for my certification exams?",
+   "pass": true,
+   "detail": "cited ['navy-cool-credential-funding', 'cloud-veterans-free-aws-azure-google-cloud-training', 'himss-foundation-professional-certification-grant']",
+   "seconds": 16.9,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "certification",
+      "branch": "Navy",
+      "audience": "veteran"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "model answered without searching; asked it to search first"
+   ],
+   "answer": "- **Navy COOL credential funding**: This program covers certification exams and is funded by the U.S. Navy, cost-free without using GI Bill or other benefits. (check the official page)\n- **Free self-paced AWS, Azure and Google Cloud training, with exam fees reimbursed up to $100 (Cloud Veterans)**: This program offers free self-paced AWS, Azure, and Google Cloud training, with exam fees reimbursed up to $100. Cost-free without using GI Bill or other benefits. (check the official page)\n- **HIMSS Foundation Professional Certification Grant**: This program provides free training and grants for veterans and their spouses to pursue health tech careers, with exam fees reimbursed after payment. Cost-free without using GI Bill or other benefits. (check the official page)\n\nSources:\n- Navy COOL credential funding (Online): https://www.cool.osd.mil/usn/index.html (details: https://skillsforvets.org/programs/navy-cool-credential-funding/)\n- Free self-paced AWS, Azure and Google Cloud training, with exam fees reimbursed up to $100 (Cloud Veterans) (Online; Online (U.S.)): https://www.cloudveterans.org/apply (details: https://skillsforvets.org/programs/cloud-veterans-free-aws-azure-google-cloud-training/)\n- HIMSS Foundation Professional Certification Grant (Online; Online. Open to applicants anywhere in the world.): https://himss.secure-platform.com/gsp/page/Professional-Certification-Grant/learn-more (details: https://skillsforvets.org/programs/himss-foundation-professional-certification-grant/)"
+  },
+  {
+   "n": 19,
+   "type": "programs",
+   "q": "Tell me about Microsoft Software and Systems Academy.",
+   "pass": true,
+   "detail": "cited ['mssa-military-spouse-microsoft-software-and-systems-academy-for', 'microsoft-software-and-systems-academy-mssa']",
+   "seconds": 12.0,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "Microsoft Software and Systems Academy"
+     }
+    }
+   ],
+   "guardrail_events": [],
+   "answer": "- **Free Microsoft software & systems academy for spouses**: Free for spouses of active-duty U.S. service members or veterans, no prior experience required beyond prerequisite learning. (check the official page)\n- **Train full-time for 17 weeks for an IT job, with Microsoft paying the program costs (Microsoft Software & Systems Academy, MSSA)**: Full-time program funded by Microsoft, for military veterans and retirees, Coast Guard, National Guard and Reserve members, and military service members of US or UK MoD forces within six months of separation or retirement. (check the official page)\n\nThere are other relevant programs listed on Skills for Vets.\n\nSources:\n- Free Microsoft software & systems academy for spouses (Online): https://military.microsoft.com/mssa/militaryspouse/ (details: https://skillsforvets.org/programs/mssa-military-spouse-microsoft-software-and-systems-academy-for/)\n- Train full-time for 17 weeks for an IT job, with Microsoft paying the program costs (Microsoft Software & Systems Academy, MSSA) (Online; See official page): https://military.microsoft.com/mssa/ (details: https://skillsforvets.org/programs/microsoft-software-and-systems-academy-mssa/)"
+  },
+  {
+   "n": 20,
+   "type": "programs",
+   "q": "I'm a veteran with a 70% disability rating. Are there free coding bootcamps I can join?",
+   "pass": true,
+   "detail": "cited ['freecodecamp-certifications', 'creating-coding-careers-pre-apprenticeship', 'vets-who-code']",
+   "seconds": 14.3,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "coding",
+      "audience": "veteran",
+      "free_only": true
+     }
+    }
+   ],
+   "guardrail_events": [
+    "scope check: mixed question, answering the training part",
+    "model answered without searching; asked it to search first"
+   ],
+   "answer": "- **freeCodeCamp certifications**: freeCodeCamp certifications are free and open to learners without requiring veteran status, fitting your criteria of a 70% disability rating.\n- **Creating Coding Careers pre-apprenticeship**: Creating Coding Careers pre-apprenticeship is free and open to learners worldwide, fitting your criteria of a 70% disability rating.\n- **Vets Who Code**: Vets Who Code is free and open to U.S. veterans, service members, and spouses, fitting your criteria of a 70% disability rating.\n\nTo confirm details, visit the official pages.\n\nSources:\n- freeCodeCamp certifications (Online): https://www.freecodecamp.org/learn (details: https://skillsforvets.org/programs/freecodecamp-certifications/)\n- Creating Coding Careers pre-apprenticeship (Online; Online worldwide for preparation; US residency/work authorization for paid apprenticeship.): https://apply.cccareers.org/ (details: https://skillsforvets.org/programs/creating-coding-careers-pre-apprenticeship/)\n- Vets Who Code (Online): https://vetswhocode.io/programs/accelerator (details: https://skillsforvets.org/programs/vets-who-code/)\n\nI can't help with VA disability claims and ratings; for that, email info@skillsforvets.org."
+  },
+  {
+   "n": 21,
+   "type": "not_found",
+   "q": "Tell me about the Lockheed Martin VetCyber Fellowship. What's the link to apply?",
+   "pass": true,
+   "detail": "cited []",
+   "seconds": 13.9,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "Lockheed Martin VetCyber Fellowship"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "named program not in directory: ['Lockheed Martin VetCyber Fellowship']"
+   ],
+   "answer": "I couldn't find \"Lockheed Martin VetCyber Fellowship\" in the Skills for Vets directory, so I can't give you a link, dates or eligibility for it. Email info@skillsforvets.org if you think it should be listed, or browse https://skillsforvets.org/programs/ for similar programs."
+  },
+  {
+   "n": 22,
+   "type": "not_found",
+   "q": "Are there any dental hygienist programs?",
+   "pass": true,
+   "detail": "cited []",
+   "seconds": 15.1,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "dental hygienist"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "weak match national-pete-military-training-program-free-osha-10-30-zoom cited; line removed",
+    "weak match sigma-forces-verified-free-subset cited; line removed",
+    "weak match palmetto-goodwill-healthcare-career-training-pathways cited; line removed",
+    "no strong match retrieved; answered 'not found'"
+   ],
+   "answer": "I couldn't find a program in the Skills for Vets directory that matches that. Email info@skillsforvets.org and the team can help, or browse https://skillsforvets.org/programs/."
+  },
+  {
+   "n": 23,
+   "type": "not_found",
+   "q": "What is the Google VetsCloud Bootcamp and when does it start?",
+   "pass": true,
+   "detail": "cited []",
+   "seconds": 16.3,
+   "tool_calls": [
+    {
+     "tool": "search_programs",
+     "args": {
+      "query": "Google VetsCloud Bootcamp"
+     }
+    }
+   ],
+   "guardrail_events": [
+    "no strong match retrieved; answered 'not found'",
+    "named program not in directory: ['Google VetsCloud Bootcamp']"
+   ],
+   "answer": "I couldn't find \"Google VetsCloud Bootcamp\" in the Skills for Vets directory, so I can't give you a link, dates or eligibility for it. Email info@skillsforvets.org if you think it should be listed, or browse https://skillsforvets.org/programs/ for similar programs."
+  },
+  {
+   "n": 24,
+   "type": "handoff",
+   "q": "How do I appeal my VA disability rating?",
+   "pass": true,
+   "detail": "cited [], handoff=True",
+   "seconds": 0.0,
+   "tool_calls": [],
+   "guardrail_events": [
+    "scope check: handoff"
+   ],
+   "answer": "I can only help find training programs in the Skills for Vets directory, so I can't answer VA disability claims and ratings. This is outside what the Skills for Vets program finder can answer reliably. Email info@skillsforvets.org and a person will follow up."
+  },
+  {
+   "n": 25,
+   "type": "handoff",
+   "q": "How much will the GI Bill housing allowance pay me in Austin?",
+   "pass": true,
+   "detail": "cited [], handoff=True",
+   "seconds": 0.0,
+   "tool_calls": [],
+   "guardrail_events": [
+    "scope check: handoff"
+   ],
+   "answer": "I can only help find training programs in the Skills for Vets directory, so I can't answer GI Bill or housing payment amounts. This is outside what the Skills for Vets program finder can answer reliably. Email info@skillsforvets.org and a person will follow up."
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+ 1 PASS  34.1s programs  Free CDL truck driving school in Iowa?  cited ['hawkeye-class-a-cdl-trucking-with-the-troops-grant', 'indian-hills-class-a-cdl-driving-futures-grant', 'dmacc-cl
+ 2 PASS  21.9s programs  How do I get a job as a data center technician?  cited ['microsoft-military-datacenter-pathway-mdp-skillbridge', 'equinix-skillbridge-data-center-trainee-programs', 'lau
+ 3 PASS  11.1s programs  I want to learn AI and machine learning online.  cited ['google-machine-learning-crash-course', 'mit-opencourseware-6-036-6-s191-intro-to-deep-learning', 'deeplearning-a
+ 4 PASS  19.0s programs  I'm Air Force. Can I get my certs paid for?  cited ['air-force-cool-credentialing', 'cloud-veterans-free-aws-azure-google-cloud-training', 'salesforce-vetforce-trail
+ 5 PASS  19.3s programs  Is there carpentry training for veterans?  cited ['ubc-military-veterans-program-free-carpenter-and-millwright-training', 'veterans-resource-center-dallas-free-wel
+ 6 PASS  13.1s programs  I want to be a Salesforce administrator.  cited ['salesforce-vetforce-trailhead-military', 'f3usa-skillbridge-cybersecurity', 'oxford-unesco-course-on-ai-and-digi
+ 7 PASS  14.3s programs  I want to be an auto mechanic.  cited ['academy-of-advanced-manufacturing', 'gm-shifting-gears-automotive-technician-training-program', 'hiring-our-hero
+ 8 PASS  10.7s not_found Tell me about the Amazon Warrior Coders Academy.  cited []
+ 9 PASS   0.0s handoff   Can you help me with my divorce paperwork?  cited [], handoff=True
+10 PASS   0.0s handoff   What are the side effects of my sleep medication?  cited [], handoff=True
+{'model': 'sfv-qwen2.5-3b', 'passed': 10, 'total': 10, 'median_seconds_when_model_ran': 16.65}
